@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Busca por Código</title>
+	
+    
+	<script src="js/jquery.js"></script>
+	
+
+	<link href="css/bootstrap.min.css" rel=stylesheet>
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+
+			$("#busca").click(function() {
+
+				var codigo = $("#codigo").val();
+				
+					
+				$("#dadosAula").empty();
+					
+				var url = "/ezgrid/"+codigo
+				
+					
+
+				$.getJSON(url, function(data) {
+						
+						var itens = [];
+						
+						
+						
+						itens.push("<tr> <td>"+ data.codigo +"</td><td>"+ data.espc.aula + "</td><td>"+ data.espc.periodo + "</td><td>"+ data.espc.qtdAulasSemana + "</td></tr>");
+							
+						
+									
+						$("#dadosAula").append(itens);
+						
+				});
+
+			});
+
+		});
+
+	</script>
+
+   
+  </head>
+
+
+  <body>
+		
+  		<div id="painelBusca">        
+		
+			<input id="codigo" class="form-control col-md-offset-5" type="text"  style="width:15%" placeholder="Digite o Código">
+			
+			<button id="busca" class="btn btn-success col-md-offset-5">Buscar</button>
+			
+			<table class="table table-bordered"> 
+				<caption>Aulas</caption>
+					<thead>
+						<tr> 
+							<th>Código</th> 
+							<th>Aula</th> 
+							<th>Período</th> 
+							<th>Quantidade de Aulas</th>
+						</tr> 
+					</thead> 
+					
+					<tbody id="dadosAula"> 
+						
+					</tbody> 
+			</table>
+
+		</div>
+		
+  </body>
+  
+</html>
