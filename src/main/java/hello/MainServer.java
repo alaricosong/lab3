@@ -32,6 +32,6 @@ public class MainServer {
     
     public static void inicializarAulas(){
     	
-    	model.addAula(new Aula("01", new Especificacao("PP", "Notuno", 2)));
+    	model.addAula(new Aula("01", new Especificacao("PP", "Noturno", 2)));
     }
 }
