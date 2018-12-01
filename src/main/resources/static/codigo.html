@@ -22,7 +22,7 @@
 					
 				$("#dadosAula").empty();
 					
-				var url = "/ezgrid/"+codigo
+				var url = "/ezgrid/"+codigo+"?format=json&jsoncallback=";
 				
 					
 
@@ -32,7 +32,7 @@
 						
 						
 						
-						itens.push("<tr> <td>"+ data.codigo +"</td><td>"+ data.espc.aula + "</td><td>"+ data.espc.periodo + "</td><td>"+ data.espc.qtdAulasSemana + "</td></tr>");
+						itens.push("<tr> <td>"+ data.codigo +"</td><td>"+ data.aula + "</td><td>"+ data.periodo + "</td><td>"+ data.qtdAulasSemana + "</td></tr>");
 							
 						
 									

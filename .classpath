@@ -4,5 +4,19 @@
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/db4o-8.0.249.16098-all-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/jetty-http-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/jetty-io-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/jetty-server-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/jetty-util-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/jetty-webapp-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/json-20151123.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/slf4j-simple-1.7.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/spark-core-2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/websocket-server-9.3.2.v20150730.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asong/Downloads/skills_assessment-master/Main_Application/dependencies/websocket-servlet-9.3.2.v20150730.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -23,7 +23,7 @@
 					
 				$("#dadosAula").empty();
 					
-				var url = "/ezgrid/"+aula+"/"+periodo+"/"+qtdAulasSemana+"";
+				var url = "/ezgrid/"+aula+"/"+periodo+"/"+qtdAulasSemana+""+"?format=json&jsoncallback=";
 					
 
 				$.getJSON(url, function(data) {
@@ -32,7 +32,7 @@
 						
 						$.each(data, function(i){
 						
-							itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.aula + "</td><td>"+ this.espc.periodo + "</td><td>"+ this.espc.qtdAulasSemana + "</td></tr>");
+							itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.aula + "</td><td>"+ this.periodo + "</td><td>"+ this.qtdAulasSemana + "</td></tr>");
 							
 						});
 									
