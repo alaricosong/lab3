@@ -10,6 +10,35 @@
 
 </head>
 
+<script>
+	function mensagemCodigo() {
+	var name=confirm("Essa página utiliza cookies. Você aceita compartilhá-los?")
+	if (name==true)
+		{
+			window.location.href = "http://localhost:8080/codigo.html";
+		}
+	else
+		{
+			document.write("Sem sua permissão não poderá utilizar nossa página! Redirecionaremos para uma que conseguirá usar!")
+		}
+	}
+</script>
+
+
+<script>
+	function mensagemAula() {
+	var name=confirm("Essa página utiliza cookies. Você aceita compartilhá-los?")
+	if (name==true)
+		{
+			window.location.href = "http://localhost:8080/aula.html";
+		}
+	else
+		{
+			document.write("Sem sua permissão não poderá utilizar nossa página! Redirecionaremos para uma que conseguirá usar!")
+		}
+	}
+</script>
+
 
 <body>
 
@@ -25,11 +54,11 @@
 	</div>
 
 	<div>
-		<a href="http://localhost:8080/aula.html"><button
+		<a href=# onclick="mensagemAula()"><button
 				class="btn btn-primary col-md-offset-5" style="align: left">Buscar
 				por Aula</button></a>
 	</div>
-
+	
 
 </body>
 
